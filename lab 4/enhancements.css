@@ -1,0 +1,58 @@
+:root {
+ --main-color: #196F3D;
+}
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ flex-direction: column;
+}
+.hover-button {
+ padding: 20px 35px;
+ border: 5px solid black;
+ background-color: var(--main-color);
+ color: white;
+ transition: background-color 0.3s ease;
+}
+.hover-button:hover {
+ background-color: #75B818;
+ padding: 40px 55px;
+ border: 5px solid black;
+}
+.animation-box {
+ border: 5px solid black;
+ width: 350px;
+ height: 350px;
+ background-color: green;
+ color: white;
+ margin-top: 20px;
+ animation: box-move 0.5s infinite alternate;
+ 
+}
+.animation-kahon {
+ margin: auto;
+  border: 5px solid black;
+  width: 350px;
+  height: 350px;
+  background-color: green;
+  color: white;
+  animation: animation-kahon 2s infinite;
+ 
+}
+
+@keyframes animation-kahon {
+  50% {transform: rotate(180deg);}
+}
+
+@keyframes box-move {
+ from {
+ transform: translateX(0);
+ }
+ to {
+ transform: translateX(100px);
+ }
+
+
+
+
